@@ -1,6 +1,6 @@
 
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block content %}
    
 <div>
@@ -41,10 +41,10 @@
          </ul>
      </div>
      <div style="padding-left:100px;margin-bottom:200px;" class="contact">
-        <h2 style="margin-left:40%; margin-bottom:20px; color: #87ceeb">Contact Me</h2>
-        <form action ='' method="post">
+        <h2 style="margin-left:40%; margin-bottom:30px; color: #87ceeb">Contact Me</h2>
+        <form style="padding-left:30%; padding-right:30%; margin-bottom:10px;color:#999" action ='' method="post">
             {% csrf_token %}
-            {{form.as_p}}
+            {{form|crispy }}
             <input type='submit' value='Submit'>
         </form>
     </div>
