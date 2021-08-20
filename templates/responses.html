@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    Here are the responses:
+    {% for response in response_list %} 
+    <div class='post-entry'>
+        <h3>{{response.name}}, {{response.email}}</h3>
+        <p>{{response.message}}</p>
+    </div>
+    {% endfor %}
+</div>
+<a href="{% url 'index' %}"> Back to my portfolio</a>
+{% endblock %}
