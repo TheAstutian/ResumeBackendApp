@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g#23rk+(n^ap%eglu-=dvs2d#4hr-a*cq(fp9pvpv)m-%fmtxj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['resumepage3mmanuel.herokuapp.com']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ResumePage',
-    
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
