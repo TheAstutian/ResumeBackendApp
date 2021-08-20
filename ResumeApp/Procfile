@@ -1,1 +1,1 @@
-web: gunicorn ResumeApp.wsgi --log-file -
+web: gunicorn ResumeApp.wsgi:application --log-file - --log-level debug
